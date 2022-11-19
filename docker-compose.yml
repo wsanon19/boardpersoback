@@ -2,7 +2,7 @@ version: '2'
 
 services:
   app:
-    image: 'wsanon19/boardpersoback:latest'
+    image: 'wsanon19/boardpersoback:1.0.0'
     build:
       context: .
     ports:
