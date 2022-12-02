@@ -2,13 +2,13 @@
 
 ## API (SpringBoot) + db PostgreeSQL 
 
-Ceci est l'API d'un projet perso, une application présentant mes projets réalisés. 
+Ceci est l'API d'un de mes projets perso, une application présentant mes projets réalisés. 
 
 Dépot git : `https://github.com/wsanon19/boardpersoback.git`
 
 Lien de déploiement mogenius : `https://boardpersoback-prod-wilfried-bf-8a0qur.mo2.mogenius.io/`
 
-## Endpoints fonctionnels de l'api  : 
+## Endpoints fonctionnels de l'API  : 
 
 - Afficher la liste des projets : 
     - Type de la requete : GET 
@@ -39,23 +39,24 @@ J'ai crée deux services :
 * covid_db : image créé a partir du services préconfigurés postgre sql fournie par mobogenius
 
 
-## covid_db  
+### covid_db  
 
-Il s'agit de l'image de la base de donnée postgre crée avec les variables d'environnements suivants: 
+Il s'agit de l'image de la base de donnée postgre créee avec les variables d'environnements suivants: 
 
 <img src="vardb.png" >
 
 
 
-## boardpersoback  
+### boardpersoback  
 
-Il s'agit du conteneur contenant l'API spring. Cette API communique avec la base de donnée sur le conteneur covid_db.
-Afin de réaliser la connection à la base de données le fichier application.properties a été configuré de la manière 
-suivante :
+Il s'agit du service sur lequel tourne le  conteneur de l'API. Cette API communique avec la base de donnée sur le conteneur covid_db.
+Afin de réaliser la connection à la base de données : 
+
+* Configuration du fichier application.properties :
 
 ```
 
-spring.datasource.url=jdbc:postgresql://${DB_DATABASE_URL}/covid_db
+spring.datasource.url=jdbc:postgresql://${DB_DATABASE_URL}/${DB_DATABASE_NAME}
 spring.datasource.username=${DB_USER}
 spring.datasource.password=${DB_PASS}
 spring.jpa.hibernate.ddl-auto=create
@@ -68,7 +69,7 @@ src/main/application.properties
 
 
 
-Puis les variables d'environnements du conteneur sont configurées ainsi : 
+* Configuration des variables d'environnements du conteneur : 
 
 <img src="varapi.png" >
 
