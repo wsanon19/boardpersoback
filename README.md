@@ -1,14 +1,14 @@
-# Board_Perso_Back
+# [Board_Perso_Back]
 
 ## API (SpringBoot) + db PostgreeSQL 
 
 Ceci est l'API d'un de mes projets perso, une application présentant mes projets réalisés. 
 
-Dépot git : `https://github.com/wsanon19/boardpersoback.git`
+* Dépot git : `https://github.com/wsanon19/boardpersoback.git`
 
-Lien de déploiement mogenius : `https://boardpersoback-prod-wilfried-bf-8a0qur.mo2.mogenius.io/`
+* Lien de déploiement mogenius : `https://boardpersoback-prod-wilfried-bf-8a0qur.mo2.mogenius.io/`
 
-### Documentation de l'API avec open-api / Swagger 
+## Documentation de l'API avec open-api / Swagger 
 
 * Lien de déploiement vers swagger : `https://boardpersoback-prod-wilfried-bf-8a0qur.mo2.mogenius.io/swagger-ui/index.html`
 
@@ -36,7 +36,7 @@ Lien de déploiement mogenius : `https://boardpersoback-prod-wilfried-bf-8a0qur.
 
 ## Mobogenius 
 
-**Services crées**  
+### Services crées 
 
 <img src="services.png" >
 
