@@ -33,7 +33,7 @@ public class ProjectController {
         URI uri = URI.create(ServletUriComponentsBuilder.fromCurrentContextPath().path("api/projet/save").toUriString());
         return  ResponseEntity.created(uri).body(projetService.save(projet));
     }
-    
+
 
 
 }

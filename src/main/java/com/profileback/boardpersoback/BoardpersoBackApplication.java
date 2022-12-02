@@ -2,6 +2,8 @@ package com.profileback.boardpersoback;
 
 import com.profileback.boardpersoback.Model.Projet;
 import com.profileback.boardpersoback.Service.ProjetService.ProjetService;
+import io.swagger.v3.oas.annotations.OpenAPIDefinition;
+import io.swagger.v3.oas.annotations.info.Info;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
@@ -12,6 +14,7 @@ import java.util.Date;
 import java.util.List;
 
 @SpringBootApplication
+@OpenAPIDefinition(info = @Info(title = "Board Perso API", version = "1.0", description = "My dev Projects API"))
 @Slf4j
 public class BoardpersoBackApplication {
 
