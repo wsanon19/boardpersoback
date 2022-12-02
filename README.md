@@ -32,27 +32,26 @@ Lien de déploiement mogenius : `https://boardpersoback-prod-wilfried-bf-8a0qur.
 
 <img src="services.png" >
 
-Deux services ont été crées. 
+J'ai crée deux services :
 
 * boardpersoback : image crée a partir du dépos git `https://github.com/wsanon19/boardpersoback.git`
 
 * covid_db : image créé a partir du services préconfigurés postgre sql fournie par mobogenius
 
 
-**covid_db**  
+## covid_db  
+
 Il s'agit de l'image de la base de donnée postgre crée avec les variables d'environnements suivants: 
 
 <img src="vardb.png" >
 
 
-**boardpersoback**  
+
+## boardpersoback  
 
 Il s'agit du conteneur contenant l'API spring. Cette API communique avec la base de donnée sur le conteneur covid_db.
 Afin de réaliser la connection à la base de données le fichier application.properties a été configuré de la manière 
 suivante :
-
-<img src="app_properties.png" >
-
 
 ```
 
@@ -65,6 +64,9 @@ spring.jpa.properties.hibernate.format_sql=true
 spring.jpa.properties.hibernate.dialect=org.hibernate.dialect.PostgreSQL81Dialect
 
 ```
+src/main/application.properties
+
+
 
 Puis les variables d'environnements du conteneur sont configurées ainsi : 
 
