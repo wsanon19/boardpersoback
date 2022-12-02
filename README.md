@@ -34,9 +34,9 @@ Lien de déploiement mogenius : `https://boardpersoback-prod-wilfried-bf-8a0qur.
 
 J'ai crée deux services :
 
-* boardpersoback : image crée a partir du dépos git `https://github.com/wsanon19/boardpersoback.git`
+* boardpersoback : image crée à partir du dépot git `https://github.com/wsanon19/boardpersoback.git`
 
-* covid_db : image créé a partir du services préconfigurés postgre sql fournie par mobogenius
+* covid_db : image créé à partir du service préconfiguré postgresql fournie par mobogenius
 
 
 ### covid_db  
