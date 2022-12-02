@@ -8,6 +8,12 @@ Dépot git : `https://github.com/wsanon19/boardpersoback.git`
 
 Lien de déploiement mogenius : `https://boardpersoback-prod-wilfried-bf-8a0qur.mo2.mogenius.io/`
 
+### Documentation de l'API avec open-api / Swagger 
+
+* Lien de déploiement vers swagger : `https://boardpersoback-prod-wilfried-bf-8a0qur.mo2.mogenius.io/swagger-ui/index.html`
+
+* Lien vers fichier JSON : `https://boardpersoback-prod-wilfried-bf-8a0qur.mo2.mogenius.io/v3/api-docs`
+
 ## Endpoints fonctionnels de l'API  : 
 
 - Afficher la liste des projets : 
@@ -23,6 +29,8 @@ Lien de déploiement mogenius : `https://boardpersoback-prod-wilfried-bf-8a0qur.
             "nom": "Dev Full Stack ",
             "description": "Ceci est le projet sur le cloud"
         }
+
+- Swagger : (voir ci-dessus)
 
 
 
