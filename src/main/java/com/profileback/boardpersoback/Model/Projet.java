@@ -23,9 +23,5 @@ public class Projet {
     private String description;
     private Date debut;
     private Date fin;
-//    private Categorie categorie;
-//    private ArrayList<String> missions;
-//    private HashMap<String,Double> techno; //Enum plus tard techno avec pourcentage
-
-
+    private String image_url;
 }
